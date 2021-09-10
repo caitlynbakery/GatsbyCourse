@@ -2,11 +2,11 @@ import React from "react";
 import { Layout } from "components";
 import { graphql } from "gatsby";
 
-export default function ContentfulPage(){
-  
+export default function ContentfulPage(props){
+  console.log(props);
     return (
         <Layout>
-            <h1>Contentful Page</h1>
+            <h1>{props.data.contentfulPage.title}</h1>
         </Layout>
     );
 }
