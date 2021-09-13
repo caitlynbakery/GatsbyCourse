@@ -1,10 +1,12 @@
 import React from 'react';
-import { HeaderWrapper} from './style';
+import { HeaderInner, HeaderWrapper} from './style';
+import Menu from "./Menu";
 
 const Header = () => {
-return (
-<HeaderWrapper />
-)
-}
+return (<HeaderWrapper>
+    <HeaderInner><Menu /> </HeaderInner>
+</HeaderWrapper>);
+
+};
 
 export default Header;
