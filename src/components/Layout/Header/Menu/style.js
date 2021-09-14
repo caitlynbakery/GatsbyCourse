@@ -16,3 +16,29 @@ a{
     }
 }
 `;
+
+export const SubMenuItemWrapper = styled.div`
+    position: relative;
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover{
+        >div:last-child{
+            display: block;
+        }
+    }
+    >div:last-child{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        top: 50px;
+        background: black;
+        white-space: nowrap;
+        box-shadow: 2px 2px 2px black;
+        padding: 0px;
+        border: 1px solid #999;
+        > div {
+            line-height: 1;
+            padding: 8px 16px;
+        }
+    }
+`;
